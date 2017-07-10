@@ -1,0 +1,37 @@
+h1{
+	text-align: center;
+}
+#kepala{
+	height: 100px;
+	background-color: navy;
+	text-align: center;
+}
+
+#navigasi{
+	height: 50px;
+	background-color: magenta;
+	text-align: center;
+}
+
+#satu{
+	background-color: blue;
+	font-weight: bold;
+	height: 400px;
+}
+
+#dua{
+	background-color: pink;
+	text-decoration: underline;
+	height: 400px;
+}
+
+#tiga{
+	background-color: yellow;
+	height: 400px;
+}
+
+#kaki{
+	height: 100px;
+	background-color: black;
+	text-align: center;
+}

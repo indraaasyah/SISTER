@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Informasi Service Komputer</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script type="text/javascript" src="assets/js/jquiery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12" id="atas">
+            <p><a href="beranda3.html">Home</a></p>
+            <a href="index3.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Logout</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="navigasi">
+            <img src="images/CRSlogo.png">
+            <h1>SISTEM INFORMASI
+                <br>SERVICE KOMPUTER</h1>
+        </div>
+    </div>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-md-2" id="side-left">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="active">
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> Data Master<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="active" href="konfirmasiservice.html">Konfirmasi Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10" id="side-right">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="page-header">Konfirmasi Service</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputnama" class="col-sm-2 control-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <p>Bambang Pamungkas</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputnama" class="col-sm-2 control-label">Nama Barang</label>
+                                <div class="col-sm-10">
+                                    <p>Acer Aspire-One 786</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="keluhankerusakan" class="col-sm-2 control-label">Keluhan Kerusakan</label>
+                                <div class="col-sm-10">
+                                    <p>
+                                        Laptop rusak karena harddisk tidak terdeteksi.
+                                    </p>
+                                    <br>
+                                    <button type="submit" class="btn btn-info">Catatan Teknisi</button>
+                                    <br>
+                                    <br>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <div class="col-md-3 col-md-offset-9">
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Tambah Sparepart</button>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-6 col-md-offset-3">
+                                                            <h1 class="page-header">Tambah Sparepart</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-lg-6 col-md-offset-3">
+                                                        <label for="namasparepart">Nama Sparepart:</label>
+                                                        <select name="" id="">
+                                                            <option>Acer Aspire-One 786</option>
+                                                            <option>Acer Aspire-Two 786</option>
+                                                            <option>Asus ROG</option>
+                                                            <option>LG Optimus Prime</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="konfirmasiservice1.html">
+                                                    <button type="button" class="btn btn-primary">Tambahkan</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="inputbarang" class="col-sm-2 control-label">Penggunaan Sparepart</label>
+                                <div class="col-sm-10">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>No</td>
+                                                <td>Id_Sparepart</td>
+                                                <td>Nama Sparepart</td>
+                                                <td>Aksi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>ID-S001</td>
+                                                <td>Hardisk Asus</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
+                                                </td>
+                                            </tr>
+                                                <td>2</td>
+                                                <td>ID-S001</td>
+                                                <td>Hardisk Asus</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>ID-S002</td>
+                                                <td>LCD Asus</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
+                                            </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3 col-md-offset-10">
+                                    <a href="beranda3.html">
+                                        <button type="submit" class="btn btn-default">Simpan</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>&copy; Sisfo 2015</p>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function getConfirmation() {
+        var retVal = confirm("Do you want to continue ?");
+        if (retVal == true) {
+            document.write("User wants to continue!");
+            return true;
+        } else {
+            document.write("User does not want to continue!");
+            return false;
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Informasi Service Komputer</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12" id="atas">
+            <p><a href="beranda3.html">Home</a></p>
+            <a href="index3.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Logout</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="navigasi">
+            <img src="images/CRSlogo.png">
+            <h1>SISTEM INFORMASI
+                <br>SERVICE KOMPUTER</h1>
+        </div>
+    </div>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-md-2" id="side-left">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="active">
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> Data Master<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="active" href="konfirmasiservice.html">Konfirmasi Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10" id="side-right">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="page-header">Data Service Baru</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Nama Barang</th>
+                                    <th>Keluhan Kerusakan</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bambang Pamungkas</td>
+                                    <td>Acer Aspire-One 786</td>
+                                    <td>Harddisk Undetected</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning">Verifikasi Kerusakan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Bambang Pamungkas</td>
+                                    <td>Acer Aspire-One 786</td>
+                                    <td>Harddisk Undetected</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning">Verifikasi Kerusakan</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bambang Pamungkas</td>
+                                    <td>Acer Aspire-One 786</td>
+                                    <td>Harddisk Undetected</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning" id="logout" onclick="getConfirmation();">Verifikasi Kerusakan</button>
+                                    </td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>&copy; Sisfo 2015</p>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function getConfirmation() {
+        var retVal = confirm("Do you want to continue ?");
+        if (retVal == true) {
+            document.write("User wants to continue!");
+            return true;
+        } else {
+            document.write("User does not want to continue!");
+            return false;
+        }
+    }
+    </script>
+</body>
+
+</html>

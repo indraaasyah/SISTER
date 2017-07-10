@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+  margin: 0;
+}
+
+
+#atas {
+  background-color: #2a43a8;
+  height: 50px; 
+}
+#atas p, #home a {
+  color: #ded4db;
+  margin-top: 15px ;
+  margin-left: 10% ;
+  float: left ;
+  margin-top: 0px;
+}
+#atas a {
+  color: #ded4db !important;
+  margin-top: 15px ;
+  margin-right: 5% ;
+  float: right ;
+}
+#navigasi {
+  background-color: #08120a ;
+  height: 120px ;
+  width: 100% ;
+}
+#navigasi img {
+  height: 80px ;
+  width: 100px ;
+  float: left ;
+  margin-left: 10% ;
+  margin-top: 20px ;
+}
+#navigasi h1 {
+  float: right ;
+  color: #ded4db ;
+  float: right ;
+  margin-right: 54% ;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #4d4d4d;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form h1{
+  color: white;
+}
+
+.form label{
+  color: white;
+}
+
+.form a{
+  color: white;
+}
+
+.form select {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #2a43a8;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #4472ea;
+}
+
+#lupa a{
+  padding: 10px;
+  text-decoration: none;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+
+#footer {
+  height: 50px;
+  background-color: #2a43a8;
+  margin-top: 10px;
+}
+#footer p {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}

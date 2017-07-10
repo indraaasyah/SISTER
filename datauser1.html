@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Informasi Service Komputer</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12" id="atas">
+            <p><a href="beranda.html">Home</a></p>
+            <a href="index.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Log Out</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="navigasi">
+            <img src="images/CRSlogo.png">
+            <h1>SISTEM INFORMASI
+                <br>SERVICE KOMPUTER</h1>
+        </div>
+    </div>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-md-2" id="side-left">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="active">
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> Data Master<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="active" href="datauser.html">Data User</a>
+                            </li>
+                            <li>
+                                <a href="tambahuser.html" id="loginmenu">Tambah User</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="laporan.html"><i class="glyphicon glyphicon-file"></i> Laporan</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10" id="side-right">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="page-header">Data User</h1>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3 col-md-offset-7">
+                        <a href="tambahuser.html">
+                            <button type="button" class="btn btn-primary">Tambah User</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Alysha Puji Utami</td>
+                                    <td>
+                                        <a href="detailuser1.html">
+                                            <button type="button" class="btn btn-primary">Lihat</button>
+                                        </a>
+                                        <a href="edituser.html">
+                                            <button type="button" class="btn btn-warning">Edit</button>
+                                        </a>
+                                        <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Indra Syahputra</td>
+                                    <td>
+                                        <a href="detailuser2.html">
+                                            <button type="button" class="btn btn-primary">Lihat</button>
+                                        </a>
+                                        <a href="edituser.html">
+                                            <button type="button" class="btn btn-warning">Edit</button>
+                                        </a>
+                                        <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>&copy; Sisfo 2015</p>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function getConfirmation() {
+        var retVal = confirm("Do you want to continue ?");
+        if (retVal == true) {
+
+            return true;
+        }
+    }
+    </script>
+</body>
+
+</html>

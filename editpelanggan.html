@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sistem Informasi Service Komputer</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12" id="atas">
+            <p><a href="beranda2.html">Home</a></p>
+            <a href="index2.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Logout</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="navigasi">
+            <img src="images/CRSlogo.png">
+            <h1>SISTEM INFORMASI
+                <br>SERVICE KOMPUTER</h1>
+        </div>
+    </div>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-md-2" id="side-left">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li>
+                        <a href="index2.html"><i class="glyphicon glyphicon-home"></i> Beranda</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> Data Master<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="active" href="datapelanggan.html">Data Pelanggan</a>
+                            </li>
+                            <li>
+                                <a href="tambahpelanggan.html" id="loginmenu">Tambah Data Pelanggan</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-file"></i> Laporan</a>
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="laporansukucadangcs.html">Laporan data Suku Cadang</a>
+                            </li>
+                            <li>
+                                <a href="laporanservice.html">Laporan Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10" id="side-right">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="page-header">Edit Pelanggan</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputnama" class="col-sm-2 control-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputnama" value="Bambang Pamungkas">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputalamat" class="col-sm-2 control-label">Alamat</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="5">Jl. A. Yani no. 48</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jeniskelamin" class="col-sm-2 control-label">Jenis Kelamin</label>
+                                <div class="col-sm-10">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="JenisKelamin" id="jk11" value="option1">Pria
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="JenisKelamin" id="jk2" value="option2">Wanita
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputbarang" class="col-sm-2 control-label">Nama Barang</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputbarang" value="Acer Aspire One 756">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="keluhankerusakan" class="col-sm-2 control-label">Keluhan Kerusakan</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="5">LCD bergaris, Speaker mati</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtelepon" class="col-sm-2 control-label">No. Telepon</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputtelepon" value="0813457628998">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-3 col-md-offset-10">
+                                    <a href="datapelanggan.html">
+                                        <button type="button" class="btn btn-default">Simpan</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <p>&copy; Sisfo 2015</p>
+    </div>
+</body>
+
+</html>
