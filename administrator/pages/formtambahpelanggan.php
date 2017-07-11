@@ -1,4 +1,4 @@
-    <div class="col-md-10" id="side-right">
+<div class="col-md-10" id="side-right">
                 <div class="row">
                     <div class="col-lg-10">
                         <h1 class="page-header">Tambah Pelanggan</h1>
@@ -7,6 +7,12 @@
                 <div class="row">
                     <div class="col-sm-10">
                         <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputid" class="col-sm-2 control-label">Id_Pelanggan</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputid" value="">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="inputnama" class="col-sm-2 control-label">Nama</label>
                                 <div class="col-sm-10">
