@@ -1,4 +1,4 @@
-    <div class="container-fluid" id="container">
+   <div class="container-fluid" id="container">
         <div class="row">
             <div class="col-md-2" id="side-left">
                 <ul class="nav nav-pills nav-stacked" role="tablist">

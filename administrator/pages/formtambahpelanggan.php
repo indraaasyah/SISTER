@@ -1,4 +1,4 @@
-<div class="col-md-10" id="side-right">
+    <div class="col-md-10" id="side-right">
                 <div class="row">
                     <div class="col-lg-10">
                         <h1 class="page-header">Tambah Pelanggan</h1>

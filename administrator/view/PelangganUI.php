@@ -9,9 +9,9 @@ class PelangganUI extends View
 	
 	public function inputDataPelanggan()
 	{
-			include_once 'controller/PelangganControl.php';
+			//include_once 'controller/PelangganControl.php';
 
-		$bm = new PelangganControl();
+		//$bm = new PelangganControl();
 //		$pesan = $bm->tambahDataPelanggan();
 
 		include_once 'pages/formtambahpelanggan.php';

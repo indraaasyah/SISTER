@@ -1,10 +1,10 @@
 <?php 
 include 'view/PelangganUI.php';
 
-$brt = new PelangganUI();
+$plg = new PelangganUI();
 
 
-$brt->inputDataPelanggan();
+$plg->inputDataPelanggan();
 
  ?>
 

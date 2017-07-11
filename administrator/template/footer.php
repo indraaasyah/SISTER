@@ -1,6 +1,10 @@
-
-    <div class="footer" id="footer">
-        <p>&copy; Sisfo 2015</p>
+   <div class="row">
+        <div class="col-md-12">
+            <div id="footer">
+                
+            <p>&copy; Sisfo 2015</p>
+            </div>   
+        </div>
     </div>
     <script src="template/assets/js/jquery.js"></script>
     <script src="template/assets/js/bootstrap.min.js"></script>

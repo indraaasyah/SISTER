@@ -7,6 +7,7 @@
     <link href="template/assets/css/metisMenu.css" rel="stylesheet">
     <link href="template/assets/css/sb-admin-2.css" rel="stylesheet">
     <link href="template/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="template/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="template/assets/css/custom.css">
 </head>
 
