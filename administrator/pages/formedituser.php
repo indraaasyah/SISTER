@@ -7,10 +7,16 @@
                 <div class="row">
                     <div class="col-sm-10">
                         <form class="form-horizontal" role="form">
+                         <div class="form-group">
+                                <label for="inputid" class="col-sm-2 control-label">Id User</label>
+                                <div class="col-sm-10">
+                                    <input name="id_user" class="form-control" id="inputnama" placeholder="Nama">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="inputnama" class="col-sm-2 control-label">Nama</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputnama" placeholder="Nama">
+                                    <input name="nama" class="form-control" id="inputnama" placeholder="Nama">
                                 </div>
                             </div>
                             <div class="form-group">
