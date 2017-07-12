@@ -3,7 +3,7 @@
 /**
 * 
 */
-class View
+class ViewAdmin
 {
 	public $title;
 	public $subtitle;
@@ -11,8 +11,8 @@ class View
 
 	function __construct()
 	{
-		include_once 'template/header.php';
-		include 'template/sidebar.php';
+		include_once 'template/admin/header.php';
+		include 'template/admin/sidebar.php';
 		
 	}
 
@@ -20,7 +20,7 @@ class View
 	{
 
 		// include_once 'content.php';
-		include 'template/footer.php';
+		include 'template/admin/footer.php';
 		//include 'template/footer.php';
 	}
 	

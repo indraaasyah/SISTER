@@ -1,63 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Sistem Informasi Service Komputer</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/metisMenu.css" rel="stylesheet">
-    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-</head>
-
-<body>
-    <div class="row">
-        <div class="col-md-12" id="atas">
-            <p><a href="beranda.html">Home</a></p>
-            <a href="index.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Log Out</span></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12" id="navigasi">
-            <img src="images/CRSlogo.png">
-            <h1>SISTEM INFORMASI
-                <br>SERVICE KOMPUTER</h1>
-        </div>
-    </div>
-    <div class="container-fluid" id="container">
-        <div class="row">
-            <div class="col-md-2" id="side-left">
-                <ul class="nav nav-pills nav-stacked" role="tablist">
-                    <li class="active">
-                        <a href="#"><i class="glyphicon glyphicon-user"></i> Data Master<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a class="active" href="datauser.html">Data User</a>
-                            </li>
-                            <li>
-                                <a href="tambahuser.html" id="loginmenu">Tambah User</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="laporan.html"><i class="glyphicon glyphicon-file"></i> Laporan</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-10" id="side-right">
+<div class="col-md-10" id="side-right">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="page-header">Edit User</h1>
+                        <h1 class="page-header">Tambah User</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-10">
                         <form class="form-horizontal" role="form">
                             <div class="form-group">
-                                <label for="inputnama" class="col-sm-2 control-label">Id_User</label>
+                                <label for="inputid" class="col-sm-2 control-label">Id_User</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputnama" placeholder="Id_User">
+                                    <input type="text" class="form-control" id="inputid" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -118,31 +71,3 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer" id="footer">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <p>&copy; Sisfo 2015</p>
-    </div>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    function getConfirmation() {
-        var retVal = confirm("Do you want to continue ?");
-        if (retVal == true) {
-            document.write("User wants to continue!");
-            return true;
-        } else {
-            document.write("User does not want to continue!");
-            return false;
-        }
-    }
-    </script>
-</body>
-
-</html>
