@@ -60,12 +60,20 @@ class User extends Model
 
 	public function editDataUser()
 	{
-		
+		$query = $this->db->prepare("SELECT * FROM user");
+    	$query->execute();
+    	$data = $query->fetchAll();
+
+     	return $data;
 	}
 
 	public function deleteDataUser()
 	{
+		$query = $this->db->prepare("SELECT * FROM user");
+    	$query->execute();
+    	$data = $query->fetchAll();
 
+     	return $data;
 	}
 
 }

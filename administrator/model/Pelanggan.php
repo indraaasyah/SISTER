@@ -56,12 +56,20 @@ class Pelanggan extends Model
 
 	public function editDataPelanggan()
 	{
-		
+		$query = $this->db->prepare("SELECT * FROM pelanggan");
+    	$query->execute();
+    	$data = $query->fetchAll();
+
+     	return $data;
 	}
 
 	public function deleteDataPelanggan()
 	{
+		$query = $this->db->prepare("SELECT * FROM pelanggan");
+    	$query->execute();
+    	$data = $query->fetchAll();
 
+    	return $data;
 	}
 
 }

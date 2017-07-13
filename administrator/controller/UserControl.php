@@ -23,6 +23,16 @@ include_once 'Controller.php';
 			return $pesan;
 		}
 
-		
+
+		public function editPelanggan()
+			{
+
+			}
+
+		public function deletePelanggan()
+			{
+					
+			}
+			
 	}
  ?> 
