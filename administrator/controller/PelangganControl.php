@@ -21,14 +21,14 @@ class PelangganControl extends Controller
 		return $pesan;
 	}
 	
-	public function editPelanggan()
+	public function editPelanggan($nama,$alamat,$jenis_kelamin,$nama_barang,$keluhan,$no_telepon)
 	{
-
+		include_once 'model/Pelanggan.php';
 	}
 
-	public function deletePelanggan()
+	public function deletePelanggan($nama,$alamat,$jenis_kelamin,$nama_barang,$keluhan,$no_telepon)
 	{
-			
+		include_once 'model/Pelanggan.php';		
 	}
 }
  ?>
