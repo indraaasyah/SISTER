@@ -8,14 +8,31 @@ include_once 'Model.php';
 class Pelanggan extends Model
 {
 
-		public $nama;
-		public $alamat;
-		public $jeniskelamin;
-		public $nama_barang;
-		public $keluhan;
-		public $no_telepon;
+	public $nama;
+	public $alamat;
+	public $jeniskelamin;
+	public $nama_barang;
+	public $keluhan;
+	public $no_telepon;
+
+	public function tampilDetailPelanggan()
+	{
+		$query = $this->db->prepare("SELECT * FROM pelanggan");
+    	$query->execute();
+    	$data = $query->fetchAll();
+
+     	return $data;
+	}
+
+	public function tampilDataPelanggan()
+	{
+		$query = $this->db->prepare("SELECT * FROM pelanggan");
+    	$query->execute();
+    	$data = $query->fetchAll();
+
+    	return $data;
+	}
 	
- 
 	public function tambahDataPelanggan($nama,$alamat,$jenis_kelamin,$nama_barang,$keluhan,$no_telepon)
 	{
 		try
@@ -35,6 +52,16 @@ class Pelanggan extends Model
 		   echo $e->getMessage(); 
 		   return false;
 		  }
+	}
+
+	public function editDataPelanggan()
+	{
+		
+	}
+
+	public function deleteDataPelanggan()
+	{
+
 	}
 
 }
