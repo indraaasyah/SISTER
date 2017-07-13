@@ -9,15 +9,17 @@ class UserUI extends ViewAdmin
 	
 	public function editDataUser()
 	{
-			//include_once 'controller/PelangganControl.php';
+		include_once 'controller/UserControl.php';
+		include_once 'model/User.php';
 
-		//$bm = new PelangganControl();
-//		$pesan = $bm->tambahDataPelanggan();
+		$usr = new UserControl();
+
+		$data_user = $usr-> tambahDataUser();
 
 		include_once 'pages/formedituser.php';
 		$this->end();
 	}
-
+  
 	public function lihatDetailUser()
 	{
 		include_once 'model/User.php';
@@ -36,7 +38,21 @@ class UserUI extends ViewAdmin
 
 		$usr = new User();
 
-		include_once'pages/lihatdatauser.php';
+		$data_user = $usr-> tampilDataUser();
+
+		include_once 'pages/lihatdatauser.php';
+		$this->end();
+	}
+
+	public function tambahDataUser()
+	{
+		include_once 'controller/UserControl.php';
+
+		$usr = new UserControl();
+
+		$data_user = $usr-> tambahDataUser();
+
+		include_once 'pages/formtambahuser.php';
 		$this->end();
 	}
 }
