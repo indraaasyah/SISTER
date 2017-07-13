@@ -31,38 +31,12 @@ $i=1; foreach ($data_user as $du) { ?>
                                         <a href="lihat_user.php">
                                             <button type="button" class="btn btn-primary">Lihat</button>
                                         </a>
-                                        <a href="edit_user.html">
+                                        <a href="edit_user.php">
                                             <button type="button" class="btn btn-warning">Edit</button>
                                         </a>
                                         <a href="datauser1.html">
                                             <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Alysha Puji Utami</td>
-                                    <td>
-                                        <a href="detailuser1.html">
-                                            <button type="button" class="btn btn-primary">Lihat</button>
-                                        </a>
-                                        <a href="edituser.html">
-                                            <button type="button" class="btn btn-warning">Edit</button>
-                                        </a>
-                                        <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Indra Syahputra</td>
-                                    <td>
-                                        <a href="detailuser2.html">
-                                            <button type="button" class="btn btn-primary">Lihat</button>
-                                        </a>
-                                        <a href="edituser.html">
-                                            <button type="button" class="btn btn-warning">Edit</button>
-                                        </a>
-                                        <button type="button" class="btn btn-danger" id="logout" onclick="getConfirmation();">Hapus</button>
                                     </td>
                                 </tr>
 <?php }

@@ -15,16 +15,18 @@ class Pelanggan extends Model
 		public $keluhan;
 		public $no_telepon;
 	
-
-	public function setBerita($tanggal,$judul,$isi,$id_kategori)
+ 
+	public function tambahDataPelanggan($nama,$alamat,$jenis_kelamin,$nama_barang,$keluhan,$no_telepon)
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO berita(tanggal,judul,isi,id_kategori) VALUES(:tanggal, :judul, :isi, :id_kategori)");
-		   $stmt->bindparam(":tanggal",$tanggal);
-		   $stmt->bindparam(":judul",$judul);
-		   $stmt->bindparam(":isi",$isi);
-		   $stmt->bindparam(":id_kategori",$id_kategori);
+		   $stmt = $this->db->prepare("INSERT INTO pelanggan(nama,alamat,jenis_kelamin,nama_barang,keluhan,no_telepon) VALUES(:nama, :alamat, :jenis_kelamin, :nama_barang, :keluhan, :no_telepon)");
+		   $stmt->bindparam(":nama",$nama);
+		   $stmt->bindparam(":alamat",$alamat);
+		   $stmt->bindparam(":jenis_kelamin",$jenis_kelamin);
+		   $stmt->bindparam(":nama_barang",$nama_barang);
+		   $stmt->bindparam(":keluhan",$keluhan);
+		   $stmt->bindparam(":no_telepon",$no_telepon);
 		   $stmt->execute();
 		   return true;
 		  }
