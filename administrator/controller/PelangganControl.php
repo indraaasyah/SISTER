@@ -21,5 +21,14 @@ class PelangganControl extends Controller
 		return $pesan;
 	}
 	
+	public function editPelanggan()
+	{
+
+	}
+
+	public function deletePelanggan()
+	{
+			
+	}
 }
  ?>
