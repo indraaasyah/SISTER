@@ -17,6 +17,21 @@ class PelangganUI extends View
 		include_once 'pages/formtambahpelanggan.php';
 		$this->end();
 	}
+
+	public function lihatDataPelanggan()
+	{
+
+	}
+
+	public function editDataPelanggan()
+	{
+
+	}
+
+	public function hapusDataPelanggan()
+	{
+
+	}
 }
 
 

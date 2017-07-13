@@ -55,6 +55,11 @@ class UserUI extends ViewAdmin
 		include_once 'pages/formtambahuser.php';
 		$this->end();
 	}
+
+	public function hapusDataUser()
+	{
+
+	}
 }
 
 
