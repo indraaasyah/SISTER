@@ -24,14 +24,14 @@ include_once 'Controller.php';
 		}
 
 
-		public function editPelanggan()
+		public function editPelanggan($nama_user,$jabatan,$alamat,$jenis_kelamin,$no_telepon,$username,$password)
 			{
-
+				include_once 'model/User.php';
 			}
 
-		public function deletePelanggan()
+		public function deletePelanggan($nama_user,$jabatan,$alamat,$jenis_kelamin,$no_telepon,$username,$password)
 			{
-					
+				include_once 'model/User.php';
 			}
 			
 	}
